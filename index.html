@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature & Humidity Monitor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Environment Monitor</h1>
+        <p class="subtitle">Temperature & Humidity Dashboard</p>
+
+        <div class="cards">
+
+            <!-- Temperature Card -->
+            <div class="card temperature">
+                <div class="icon">🌡️</div>
+
+                <div class="value" id="temperature">
+                    25°C
+                </div>
+
+                <div class="label">
+                    Temperature
+                </div>
+            </div>
+
+            <!-- Humidity Card -->
+            <div class="card humidity">
+                <div class="icon">💧</div>
+
+                <div class="value" id="humidity">
+                    60%
+                </div>
+
+                <div class="label">
+                    Humidity
+                </div>
+            </div>
+
+        </div>
+
+        <div class="input-section">
+
+            <h3>Update Sensor Values</h3>
+
+            <input
+                type="number"
+                id="tempInput"
+                placeholder="Temperature °C"
+            >
+
+            <input
+                type="number"
+                id="humidityInput"
+                placeholder="Humidity %"
+                min="0"
+                max="100"
+            >
+
+            <br>
+
+            <button onclick="updateValues()">
+                Update Values
+            </button>
+
+            <p class="status" id="status">
+                System ready
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
