@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #2193b0,
+        #6dd5ed
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Sensor Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    color: white;
+}
+
+.temperature {
+    background: linear-gradient(
+        135deg,
+        #ff512f,
+        #f09819
+    );
+}
+
+.humidity {
+    background: linear-gradient(
+        135deg,
+        #2196f3,
+        #00bcd4
+    );
+}
+
+.icon {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+.value {
+    font-size: 45px;
+
+    font-weight: bold;
+}
+
+.label {
+    font-size: 20px;
+
+    margin-top: 10px;
+}
+
+/* Input Section */
+
+.input-section {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #ddd;
+}
+
+.input-section h3 {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 180px;
+
+    padding: 12px;
+
+    margin: 8px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #2196f3;
+
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.4);
+}
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2196f3;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1976d2;
+}
+
+.status {
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color: #555;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+}
